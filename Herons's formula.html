@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- if you know the sides of a triangle , you can find the area using 'Herons' formula  -->
+    <!-- formula s=(a+b+c)/2  -->
+    <!-- area=math.sqrt(s(s-a)*(s-b)*(s-c)) -->
+
+    <script>
+      let a = prompt("Enter first side of triangle:");
+      let b = prompt("Enter second side of triangle:");
+      let c = prompt("Enter Triangle side of triangle:");
+
+      let s = (a + b + c) / 2;
+
+      let area = Math.sqrt(s * (s - a) * (s - b) * (s - c));
+      // javascript program to find the area of triangel when all sides are known
+
+      console.log(`a:${a},b:${b},c:${c} s=${s} area = √(s(s-a)*(s-b)*(s-c))=${area}
+        `);
+    </script>
+  </body>
+</html>
