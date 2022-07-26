@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>click below button if you want to create multiplication of any number</h4>
+    <button onclick="multiply()">Click here!</button>
+    <script>
+        function multiply(){
+            let number=parseInt(prompt("Enter a any number for multiplication table"));
+
+        for(let i=1;i<11;i++){
+            let multiplication=number*i;
+            document.write(`multiplication of enter number is=> ${number}*${i}=${multiplication} <br>`)
+        }
+        }
+    </script>
+
+</body>
+</html>

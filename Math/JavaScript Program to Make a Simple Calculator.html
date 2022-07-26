@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button type="button" onclick="add()">+</button>
+    <button type="button" onclick="subtract()">-</button>
+    <button type="button" onclick="multip()">*</button>
+    <button type="button" onclick="division()">/</button>
+
+   <script>
+     let num1=parseInt(prompt("Enter first number of operation"));
+    let num2=parseInt(prompt("Enter second number of operation"));
+
+            function add(){
+                let addNum=num1+num2;
+           document.write(`addition: ${num1} + ${num2}=${addNum}`)
+
+            }
+            function subtract(){
+                let subNum=num1-num2;
+           document.write(`subtraction: ${num1} - ${num2}=${subNum}`)
+
+            }
+            function multip(){
+                let multiply=num1*num2;
+           document.write(`multiplication: ${num1} * ${num2}=${addNum}`)
+
+            }
+            function division(){
+                let divNum=num1/num2;
+           document.write(`division: ${num1} / ${num2}=${divNum}`)
+
+            }
+
+   </script>
+
+    
+</body>
+</html>
