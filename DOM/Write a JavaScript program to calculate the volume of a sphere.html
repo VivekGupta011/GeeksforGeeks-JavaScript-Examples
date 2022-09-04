@@ -11,17 +11,18 @@
       <p>Input radius value and get the volume of a sphere.</p>
       <form action="" id="Myform">
         <label for="numb">radius</label>
-        <input type="text" id="radiuss" placeholder="Enter the radius of a sphere">
+        <input type="text" id="radiuss" placeholder="Enter the radius of a sphere"> 
         <label for="mumb">volume</label>
-        <input type="text"  name="" id="volum1" />
+        <input type="text"  name="" id="volum1"/>
         <input type="button" value="submit" id="submitvol"/>
       </form>
     </div>
 
     <script>
       function btnclick1() {
-        // let radius = document.getElementById("radiuss").value;
-         var radius=7
+        let radius = document.getElementById("radiuss").value;
+        console.log("this is radius:",radius);
+        //  var radius=7
         radius=Number(radius);
         let volume = (4*Math.PI*radius*radius*radius)/3;
         console.log("this is after volume",volume);

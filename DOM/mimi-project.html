@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="block-containerr">
+        <p id="name"></p>
+        <p id="email"></p>
+        <img src="" alt="" id="randomIMg">
+        <div id="imgBlock">
+
+        </div>
+        <p id="location"></p>
+        
+    </div>
+
+    <script>
+         const api_url = "https://randomuser.me/api/";
+        async function fetchingdata(){
+            const response=await fetch(api_url);
+            console.log(response);
+            const data=await response.json();
+            console.log(data.results[0]);
+            let userData=data.results[0];
+
+            //fullname
+            let {first,last,title}=userData.name;
+            let fullname=`${title} ${first} ${last}`;
+            console.log(fullname);
+
+            // for email
+            let {email,phone}=userData;
+            
+            // for images
+            let{large,medium:myphoto}=userData.picture;
+            
+            document.getElementById("name").innerHTML=fullname;
+            document.getElementById("email").innerHTML=email;
+            document.getElementById("location").innerHTML=phone;
+            document.getElementById("randomIMg").src=large;
+
+            // for images create element
+            let imgTag=document.createElement("img");
+            imgTag.src=myphoto;
+            let imgElement=document.getElementById("imgBlock");
+            imgElement.appendChild(imgTag);
+            console.log(imgElement);
+
+
+
+        }
+        fetchingdata();
+    </script>
+    
+</body>
+</html>
