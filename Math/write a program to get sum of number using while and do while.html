@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="test"></p>
+
+    <script>
+        let number=parseInt(prompt("Enter a Number:"));
+        let sum=0;
+        // while(number>0){
+        //     sum+=number;
+        //     number=parseInt(prompt("Enter a another number to add"));
+            
+        // }
+        // document.getElementById("test").innerHTML=document.write(sum);
+        // console.log(sum);
+
+        do{
+            sum+=number;
+            number=parseInt(prompt("Enter a Number:"));
+
+        }while(number>0)
+
+        console.log(sum);
+    </script>
+    
+</body>
+</html>
