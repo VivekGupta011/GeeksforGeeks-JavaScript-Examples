@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+       function Testing(){
+        console.log("Enter number between 1 to 10");
+        let Input=parseInt(prompt("Enter number:"));
+        let number=Math.floor(Math.random()*10+1);
+        let message;
+        while(Input!==number){
+            if(Input>number){
+                message=alert("Enter a lesss number");
+               
+
+
+            }else{
+                message=alert("Enter a greater number");
+                
+
+            }
+            Input=parseInt(prompt("Enter number:"));
+
+        }
+        if (Input==number){
+            console.log("success");
+            console.log("Number was:",Input);
+        }
+
+        
+
+       }
+       Testing();
+       
+    </script>
+</body>
+</html>
