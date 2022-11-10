@@ -1,3 +1,4 @@
+'use strict';
 export function Getsum(a,b){
     return a+b;
 }

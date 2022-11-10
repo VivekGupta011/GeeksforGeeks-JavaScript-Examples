@@ -1,3 +1,4 @@
+'use strict';
 import {Getsum,name} from "./File1";
 let ans=Getsum("vivek","gupta");
 
